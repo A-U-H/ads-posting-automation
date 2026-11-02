@@ -1,0 +1,26 @@
+{
+  "name": "aven-bot",
+  "version": "1.0.0",
+  "description": "Avanture.net browser automation bot with premium web dashboard",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"nodemon server/index.js\" \"vite\"",
+    "dev:server": "nodemon server/index.js",
+    "dev:client": "vite",
+    "start": "node server/index.js",
+    "build": "vite build",
+    "install:browser": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "playwright": "^1.48.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7",
+    "vite": "^5.4.8"
+  }
+}

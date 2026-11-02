@@ -1,0 +1,11 @@
+node_modules/
+dist/
+screenshots/
+.env
+.env.local
+.env.*
+!.env.example
+*.log
+.agents/
+skills-lock.json
+test_assets/
